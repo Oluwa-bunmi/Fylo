@@ -4,24 +4,42 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
-a{
-    padding-left: 3rem;
-   text-decoration: none;
-   color: hsl(240, 46%, 18%);
-}
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding: 0 4rem;
+}
+nav .logo{
+width: 120px;
+} 
+nav a{
+    padding-left: 3rem;
+   text-decoration: none;
+   color: hsl(240, 46%, 18%);
+   font-weight: 600;
 }
 button{
     background-color:hsl(214, 88%, 47%);
     color: white;
     padding: 1rem 5rem;
+    font-size: 16px;
+    font-weight: 600;
     border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.firstSection{
+
+    align-items: center;
+}
+.container{ 
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 5rem 4rem;
 }
 .left{
     display: flex;
@@ -29,37 +47,36 @@ button{
     gap: 1rem;
     color: hsl(243, 87%, 12%);
 }
-.container{ 
-    display: flex;
-    align-items: center;
-    
-    gap: 4rem;
-    padding: 5rem 4rem;
+.left h1{
+    font-size: 45px;
+}
+.left p{
+    line-height: 35px;
+    font-size: 19px;
 }
 form{
     display: flex;
     gap: 2rem;
 }
-h1{
-    font-size: 55px;
+.secondSection{
+    align-items: start;
 }
-p{
-    line-height: 35px;
-    font-size: 20px;
-}
-.anchor{
+
+
+.secondSection .anchor{
+    text-decoration: none;
     display: flex;
     align-items: center;
     border-bottom:  1px solid hsl(170, 45%, 43%);
     width: 220px;
     gap: 10px;
 }
-.second{
+.secondSection{
     background-image: url(/images/bg-curve-desktop.svg);
     background-size: cover;
     background-position: center;
 }
-.box{
+.secondSection .testimonial{
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -67,19 +84,26 @@ p{
     padding: 2rem ;
     background-color: white;
     width: 500px;
+    border-radius: 12px;
 }
-.fan{
+.profile{
    
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.fan img{ 
+.profile img{ 
     width: 70px;
     height: 70px;
     border-radius: 50%;
 }
-.third{
+
+
+
+
+
+/* REDO OTHER SECTIONS IN ORDER TO CORRECT THE RESPONSIVENESS */
+/* .third{
     display: grid;
     align-items: center;
     background-color: hsl(240, 25%, 39%);
@@ -127,4 +151,4 @@ li{
     border: 1px solid white;
     border-radius: 50%;
     padding: 10px;
-}
+} */
